@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Object learing in the javascript</title></head>
+    <body>
+        <script>
+            const Product ={
+    //Propery name : value 
+                name:'Sathya',
+                Age:45,
+                'delivery-time':19,    /////
+                ratings:{
+                    star:8.9,
+                    count:100,
+                },
+                fun:function Functionanme ()
+                {
+                    console.log('script function wokring');
+                }
+
+            };
+            console.log(Product);
+            console.log(Product.Age);     ///////// dot notation
+            console.log(Product['name']); //////// bracket notation
+            console.log(Product['Delivery-date']);///////// we can createhe dot notation delivery-time its considers as the maths
+                                                   ////////so we use the [delivery -date]
+             Product.fun();
+
+             //json is a object type used universal langauve 
+
+             console.log(JSON.stringify(Product))
+             const jsonstring=JSON.stringify(Product)
+            console.log(JSON.parse(jsonstring))
+
+            // localStorage.setItem('Score','hello')
+            // console.log(localStorage.getItem('Score'))
+
+
+        </script>
+    </body>
+</html>
+
+
