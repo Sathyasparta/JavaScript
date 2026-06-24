@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <button onclick="Calcutae(2)"
+                class="JS+2">+2</button>
+        <button onclick="Calcutae(1)"
+        class="JS+1">+1</button>
+        <input placeholder="type ur name" class="JS-Input" onkeypress="Onpressevent(event)">
+        <button onclick="document.body.innerHTML='Nothing is select to calulate'"
+        class="JS-Calulate">calcuaate</button>
+    </head>
+    <p>
+        cart quantity <span class="js-quantity">0</span></p>
+              your name <span class="js-name">0</span></p>
+
+    </p>
+    <script>
+        function Onpressevent()
+        {
+            
+            const Name=document.querySelector('.JS-Input');
+            const value=Name.value;
+            if (event.key=='Enter')
+        {
+            document.querySelector('.js-name').innerHTML=`${value}`
+        }
+
+        }
+        let quatintiy=0;
+     function Calcutae(amount)
+     {
+        quatintiy=quatintiy+amount
+        document.querySelector('.js-quantity').innerHTML=quatintiy
+    
+     }
+    </script>
+
+    
+
+</html>

@@ -1,0 +1,52 @@
+.JS-Delete
+            {
+                background-color: red;
+                color: white;
+            }
+
+            .JS-add
+            {
+                background-color: green;
+                color: white;
+            }
+
+            body
+            {
+                font-family: ARIAL;
+
+            }
+            .todo-grid,.todogrid
+            {
+                display: grid;
+                grid-template-columns: 200px 150px 100px;
+                row-gap: 10px;
+                column-gap: 10px;
+            }
+            .todogrid
+            {
+                margin-bottom: 10px;
+            }
+            .nameinput
+            {
+                font-size: 15px;
+                padding: 6px;
+                cursor: pointer;
+                align-items: center;
+            }
+            .JS-add
+            {
+                background-color: green;
+                                cursor: pointer;
+                                align-items: stretch;
+
+            }
+            .JS-Delete
+            {
+                background-color: red;
+                 font-size: 15px;
+                padding: 6px;
+                                cursor: pointer;
+
+            }
+
+             

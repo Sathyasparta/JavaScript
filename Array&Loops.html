@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Arrays and Loops learing</title>
+        
+    </head>
+    <body>
+        
+        <script>
+            /*
+            const Myarray=[10,20,30];
+            console.log(Myarray)
+            console.log(Myarray[0]);
+            Myarray[1]=40;
+                        console.log(Myarray);
+
+                        const MySecondArray=[1,'hello',false,{name:'socks'}]
+                        console.log(MySecondArray)
+                        console.log(Array.isArray({name:'socks'}));
+                        console.log(MySecondArray.length);
+                        MySecondArray.push(110);
+                        console.log(MySecondArray);
+
+                        
+                                                console.log(MySecondArray.splice(0,1));
+                                                */
+
+// let i =0;
+// while(i<=5){
+//     console.log(i);
+//     i=i+1;
+// }
+// for(i=0;i<=5;i++)
+// {
+//         console.log(i);
+
+// }
+// const todo=[
+//     'dinner', 'lunch','breakfast',3
+
+// ]
+// for (let i=0;i<todo.length;i++)
+// {
+//     const value=todo[i];
+//     console.log(value);
+// }
+
+const Num=[1,2,3]
+// let total=0;
+// for(let i=0;i<Num.length;i++)
+// {
+//     const numvalue=Num[i];
+//     total=total+numvalue;
+// }
+    // console.log(total)
+  
+doubled([0,1,0])
+
+function doubled(Num)
+{
+    let Numdoubled=[];
+
+  for(let i=0;i<Num.length;i++)
+{
+    const numvalue=Num[i];
+    if (!numvalue==0){
+    
+    Numdoubled.push(numvalue*2);
+    console.log(Numdoubled);
+
+    }
+}
+
+findSearch(['hello', 'world', 'search', 'good']);
+findSearch(['not', 'found']);
+findSearch(['hello', 'world', 'search', 'good','search']);
+
+
+
+        function findSearch(Arrays)
+        {
+            let result=-1;
+
+            for (let i=0;i<Arrays.length;i++)
+            {
+                if (Arrays[i]==='search')
+                {
+                    result=i
+                    break;  
+                }
+            }
+        console.log(result)
+        }
+
+        }
+
+        console.log("Nextfuntion");
+
+findindex(['green', 'red', 'blue', 'red'],'red');
+findindex(['green', 'red', 'blue', 'red'],'yellow');
+
+function findindex(arrays, words)
+{
+    let resut=-1
+    for(let i=0;i<arrays.length;i++)
+    {
+        if(arrays[i]===words)
+    {
+        resut=i
+        break;
+    }   
+    }
+    console.log(resut)
+}
+removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']);
+
+function removeEgg(foods) {
+  let i = foods.length - 1;
+  for (i; i >= 0; i--) {
+    if (foods[i]==='egg') {
+      foods.splice(i, 1);
+    }
+  }
+  return foods; // now outside the loop, runs once after all iterations
+}
+
+console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+// removefirsttwoegg(['egg', 'apple', 'egg', 'egg', 'ham']);
+
+
+function removefirsttwoegg(foods)
+{
+    let i=0;
+    let removecount=0;
+    for(i;1<foods.length;i++)
+{
+    if(foods[i]==='egg')
+    {
+        foods.splice(i,1)
+        i--;
+        removecount++;
+
+            if (removecount===2)
+        {
+            break;
+        }
+    }
+
+}
+
+    return foods;
+
+}
+    console.log(removefirsttwoegg(['egg', 'apple', 'egg', 'egg', 'ham']));
+    console.log('next');
+
+
+
+
+
+
+
+
+
+
+    console.log('egg', 'apple', 'egg', 'egg', 'ham')
+    function Reversse(foods)
+    {
+        const foodsCopy = foods.slice();
+        console.log(foodsCopy);
+        let result=[];
+let Removed=0;
+        const Reversefood=foods.reverse();
+
+        for(let i=0;i<Reversefood.length;i++)
+    {
+        if(Reversefood[i]==='egg' & Removed<2 )
+    {
+        Removed++;
+        continue;
+    }
+    result.push(Reversefood[i])
+
+    };
+    return result.reverse();
+
+    }
+        console.log(Reversse(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+
+
+        //fizzbuzz
+
+        for(let i=1;i<=20;i++)
+    {
+    
+     if (i % 3 === 0 && i % 5 === 0) {
+          console.log('FizzBuzz');
+
+    }else if (i%3==0)
+    {
+        console.log('fizz');
+    }
+    else if (i%5==0)
+    {
+        console.log('Buzz')
+    }
+    else
+    {
+        console.log(i)
+    }
+    }
+
+
+    console.log('Next')
+
+
+    function findIndx(arrays, words)
+
+    {
+        for(let i=0;i<arrays.length;i++)
+    {
+        if(arrays[i]===words)
+    {
+        return i;
+    }
+
+    }
+    return -1;
+    }
+function unique(foods)
+
+{
+    let result=[];
+    for(let i=0;i<foods.length;i++)
+{
+    const word=foods[i]
+    if(findIndx(result, word)===-1)
+{
+    result.push(word)
+}
+}
+return result;
+
+}
+ console.log(unique(['green', 'red', 'blue', 'red']));
+      console.log(unique(['red', 'green', 'green', 'red']));
+
+        </script>
+    </body>
+</html>
+
+

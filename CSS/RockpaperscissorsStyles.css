@@ -1,0 +1,39 @@
+body{
+        background-color: black;
+        color: white;
+      }
+      .Title{
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .Move-icon{
+        
+        height: 50px;
+      }
+      .Move-Button
+      {
+        background-color: transparent;
+        border: 3px solid white;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        margin-right: 10px;
+      }
+      .JS-Result{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 50px;
+
+      }
+      .JS-Score{
+        margin-top: 50px;
+
+      }
+      .Reset
+      {
+        background-color: white;
+        border: none;
+        font-size: 15px;
+        padding: 8px 15px;
+        cursor: pointer;
+      }
